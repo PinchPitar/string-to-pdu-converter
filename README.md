@@ -1,34 +1,33 @@
-# string_to_pdu_converter
-GSM Modem PDU Converter: A Python module for converting USSD codes, such as '*544#', to GSM 7-bit packed format, specifically tailored for compatibility with older Huawei modems like E160. Inspired by http://smstools3.kekekasvi.com/topic.php?id=288
+# PDUEncoder: A Python Class for PDU Encoding
+
+## Overview
+`PDUEncoder` is a Python class designed for encoding strings into the PDU (Protocol Data Unit) format. It offers functionality to convert strings into their PDU representation, mainly used in SMS (Short Message Service) and telecommunications. The class handles various character encodings and provides methods for binary and hexadecimal conversions.
 
 ## Features
+- **Seven-Bit Default Alphabet**: Supports a wide range of characters in the seven-bit default alphabet used in SMS.
+- **Binary and Hexadecimal Conversions**: Includes methods for converting binary strings to integers, integers to hexadecimal strings, and vice versa.
+- **String to PDU Conversion**: Converts any given string into its PDU representation.
 
-- **USSD Code Conversion:** Easily convert USSD codes to GSM 7-bit packed format.
-- **Huawei Modem Compatibility:** Optimized for seamless integration with older Huawei modems, including the E160 model.
+## Installation
+No special installation is required. You can include this class directly into your Python project. Ensure you have Python installed on your system.
 
-## Manual Installation
+## Usage
+To use the `PDUEncoder`, simply import the class into your Python script and create an instance of it. Here's a basic example:
 
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/PinchPitar/string_to_pdu_converter.git
-   cd string-to-pdu-converter
+```python
+from pduencoder import PDUEncoder
 
-## Example Usage
+# Create an instance of PDUEncoder
+encoder = PDUEncoder()
 
-1. **import the file**
-    ```python
-      from string-to-pdu-converter import PDUConverter
-    
-      # Create an instance of the PDUConverter class
-      new = PDUConverter()
-    
-      # Use the string_to_pdu method
-      input_string = "*544#"
-      pdu_result = new.string_to_pdu(input_string)
-    
-      # Print the result
-      print("PDU Result:", pdu_result)
+# Example string
+input_string = "Hello World"
 
+# Convert the string to PDU format
+pdu_string = encoder.string_to_pdu(input_string)
+
+print(f"PDU Format: {pdu_string}")
+```
 
 ## Contributions
 
