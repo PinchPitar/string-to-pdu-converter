@@ -1,4 +1,4 @@
-# string-to-pdu-converter
+# string_to_pdu_converter
 Huawei Modem PDU Converter: A Python module for converting USSD codes, such as '*544#', to GSM 7-bit packed format, specifically tailored for compatibility with older Huawei modems like E160. Inspired by http://smstools3.kekekasvi.com/topic.php?id=288
 
 ## Features
@@ -10,7 +10,7 @@ Huawei Modem PDU Converter: A Python module for converting USSD codes, such as '
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/PinchPitar/string-to-pdu-converter.git
+   git clone https://github.com/PinchPitar/string_to_pdu_converter.git
    cd string-to-pdu-converter
 
 ## Example Usage
